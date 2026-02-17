@@ -6,8 +6,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 // Home row mods macro
-#define HRML(k1,k2,k3,k4) &ht LSHFT k1  &lt 5 k2  &lt1 k3  &lt3 k4
-#define HRMR(k1,k2,k3,k4) &lt4 k1  &lt2 k2  &lt6 k3  &ht RSHFT k4
+#define HRML(k1,k2,k3,k4) &mt LSHFT k1  &lt 5 k2  &lt1 k3  &lt3 k4
+#define HRMR(k1,k2,k3,k4) &lt4 k1  &lt2 k2  &lt6 k3  &mt RSHFT k4
 
 / {
     behaviors {
@@ -42,7 +42,7 @@
             HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        COLON)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
-            &kp Z      &ht LCTRL X &ht LALT C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
+            &kp Z      &mt LCTRL X &mt LALT C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &lt 2 TAB   &kp BPSC      &lt 7 SPACE &kp END
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -66,7 +66,7 @@
 	arrow_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ INSERT   │  1	│  2	   │  3       │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END	 │  :
+        //│ INSERT   │  1	    │  2	   │  3       │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END	     │  :
        &trans   &trans    &kp PG_UP	 &trans    &trans                  &trans     &trans    &trans    &trans      &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ LEFT     │  UP	│   DOWN   │  RIGHT   │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
