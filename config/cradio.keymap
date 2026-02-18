@@ -157,7 +157,7 @@
             &trans   &kp PRCNT   &kp FSLH     &kp ENTER     &kp C_PP     &trans    &kp LGUI     &kp L     &none       &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │  7       │  8       │  9       │  DELETE  │   │          │          │          │          │          │
-          &trans        &trans 		&trans   &trans     &trans          &trans &kp LCTRL  &kp LALT  & kp DEL  &trans     
+          &trans        &trans 		&trans   &trans     &trans          &trans &kp LCTRL  &kp LALT  &kp DEL  &trans     
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &kp K_BACK     &kp TAB         &none     &kp K_FORWARD
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
